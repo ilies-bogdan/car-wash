@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Carwash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\Car.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\CarsRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\CarsService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\CarValidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\FileCarsRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\GUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\Tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\UI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{bad6624e-f317-48de-a0dc-c07b69b7074d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{abd43d6f-8945-42f4-8b36-8388d29d2f71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{62f1b534-f63f-478a-aa67-78fb95928e3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{acff816d-779a-46fd-911c-19dba4b630f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Carwash.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Carwash.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="carwash.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\Car.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\CarsRepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\CarsService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\CarValidator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\Exceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\FileCarsRepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\GUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\List.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\MyListModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\MyTableModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\Observable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\Observer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\Tests.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\UI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\Undo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Labs_OOP\Lab_06_07_ver2\cars.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="D:\Labs_OOP\Lab_06_07_ver2\test_export.html">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="D:\Labs_OOP\Lab_06_07_ver2\cars.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="D:\Labs_OOP\Lab_06_07_ver2\test_cars.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="D:\Labs_OOP\Lab_06_07_ver2\test_export.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="D:\Labs_OOP\Lab_06_07_ver2\wash_list.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
