@@ -7,28 +7,28 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\Car.cpp">
+    <ClCompile Include="Car.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\CarsRepository.cpp">
+    <ClCompile Include="CarsRepository.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\CarsService.cpp">
+    <ClCompile Include="CarsService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\CarValidator.cpp">
+    <ClCompile Include="CarValidator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\FileCarsRepository.cpp">
+    <ClCompile Include="FileCarsRepository.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\GUI.cpp">
+    <ClCompile Include="GUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\Tests.cpp">
+    <ClCompile Include="Tests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Labs_OOP\Lab_06_07_ver2\UI.cpp">
+    <ClCompile Include="UI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,71 +62,68 @@
     </QtRcc>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\Car.h">
+    <ClInclude Include="Car.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\CarsRepository.h">
+    <ClInclude Include="CarsRepository.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\CarsService.h">
+    <ClInclude Include="CarsService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\CarValidator.h">
+    <ClInclude Include="CarValidator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\Exceptions.h">
+    <ClInclude Include="Exceptions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\FileCarsRepository.h">
+    <ClInclude Include="FileCarsRepository.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\GUI.h">
+    <ClInclude Include="GUI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\List.h">
+    <ClInclude Include="List.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\MyListModel.h">
+    <ClInclude Include="MyListModel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\MyTableModel.h">
+    <ClInclude Include="MyTableModel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\Observable.h">
+    <ClInclude Include="Observable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\Observer.h">
+    <ClInclude Include="Observer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\Tests.h">
+    <ClInclude Include="Tests.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\UI.h">
+    <ClInclude Include="UI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Labs_OOP\Lab_06_07_ver2\Undo.h">
+    <ClInclude Include="Undo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\Labs_OOP\Lab_06_07_ver2\cars.html">
+    <None Include="cars.html">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="D:\Labs_OOP\Lab_06_07_ver2\test_export.html">
+    <None Include="test_export.html">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="D:\Labs_OOP\Lab_06_07_ver2\cars.txt">
+    <Text Include="cars.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="D:\Labs_OOP\Lab_06_07_ver2\test_cars.txt">
+    <Text Include="test_export.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="D:\Labs_OOP\Lab_06_07_ver2\test_export.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="D:\Labs_OOP\Lab_06_07_ver2\wash_list.txt">
+    <Text Include="wash_list.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

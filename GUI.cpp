@@ -106,30 +106,32 @@ void GUI::initGUI() {
 
 	// Wash list button
 	QWidget* washListWidget = new QWidget();
-	QHBoxLayout* washListLayout = new QHBoxLayout();
+	QVBoxLayout* washListLayout = new QVBoxLayout();
 	washListWidget->setLayout(washListLayout);
-	washListLayout->addStretch();
+	washListLabel = new QLabel("Wash List Menu");
+	washListLayout->addWidget(washListLabel);
+	// washListLayout->addStretch();
 	washListButton = new QPushButton("Wash List");
 	washListLayout->addWidget(washListButton);
-	washListLayout->addStretch();
-	carLayout->addRow(washListWidget);
-	QWidget* washListReadOnlyWidget = new QWidget();
+
+	emptyWashListButton = new QPushButton("Empty Wash List");
+	washListLayout->addWidget(emptyWashListButton);
+	// washListLayout->addStretch();
+	// carLayout->addRow(washListWidget);
+	/*QWidget* washListReadOnlyWidget = new QWidget();
 	QHBoxLayout* washListReadOnlyLayout = new QHBoxLayout();
 	washListReadOnlyWidget->setLayout(washListReadOnlyLayout);
 	washListReadOnlyLayout->addStretch();
 	washListReadOnlyLayout->addWidget(washListReadOnlyButton);
 	washListReadOnlyLayout->addStretch();
-	carLayout->addRow(washListReadOnlyWidget);
+	carLayout->addRow(washListReadOnlyWidget);*/
 
 	QWidget* editWashListWidget = new QWidget();
-	QVBoxLayout* editWashListLayout = new QVBoxLayout();
+	QHBoxLayout* editWashListLayout = new QHBoxLayout();
 	editWashListWidget->setLayout(editWashListLayout);
 
-	emptyWashListButton = new QPushButton("Empty Wash List");
-	editWashListLayout->addWidget(emptyWashListButton);
-
 	QWidget* addWashListWidget = new QWidget();
-	QHBoxLayout* addWashListLayout = new QHBoxLayout();
+	QVBoxLayout* addWashListLayout = new QVBoxLayout();
 	addWashListWidget->setLayout(addWashListLayout);
 	QLabel* washListRegNumberLabel = new QLabel("Registration number:");
 	addWashListLayout->addWidget(washListRegNumberLabel);
@@ -140,7 +142,7 @@ void GUI::initGUI() {
 	editWashListLayout->addWidget(addWashListWidget);
 
 	QWidget* generateCarsWidget = new QWidget();
-	QHBoxLayout* generateCarsLayout = new QHBoxLayout();
+	QVBoxLayout* generateCarsLayout = new QVBoxLayout();
 	generateCarsWidget->setLayout(generateCarsLayout);
 	QLabel* generateCarsLabel = new QLabel("Number of cars to generate:");
 	generateCarsLayout->addWidget(generateCarsLabel);
@@ -149,9 +151,11 @@ void GUI::initGUI() {
 	generateCarsButton = new QPushButton("Generate Wash List");
 	generateCarsLayout->addWidget(generateCarsButton);
 	editWashListLayout->addWidget(generateCarsWidget);
-	
-	carLayout->addWidget(editWashListWidget);
-	
+
+	washListLayout->addWidget(editWashListWidget);
+
+	carLayout->addRow(washListWidget);
+
 	mainLayout->addWidget(carWidget);
 
 	// Manufacturer buttons
@@ -198,14 +202,14 @@ void GUI::connectSignalsSlots() {
 		modelText->setText(QString::fromStdString(car.getModel()));
 		typeText->setText(QString::fromStdString(car.getType()));
 		});
-	
+
 	QObject::connect(addButton, &QPushButton::clicked, this, &GUI::storeCar);
 	QObject::connect(findButton, &QPushButton::clicked, this, &GUI::findCar);
 	QObject::connect(deleteButton, &QPushButton::clicked, this, &GUI::deleteCar);
 	QObject::connect(updateButton, &QPushButton::clicked, this, &GUI::updateCar);
 	QObject::connect(filterByManufacturerButton, &QPushButton::clicked, this, &GUI::filterByManufacturer);
 	QObject::connect(filterByTypeButton, &QPushButton::clicked, this, &GUI::filterByType);
-	QObject::connect(sortByRegNumberButton, &QPushButton::clicked, this, [&](){
+	QObject::connect(sortByRegNumberButton, &QPushButton::clicked, this, [&]() {
 		refreshCarsList(carsSrv.sortByRegistrationNumber());
 		});
 	QObject::connect(sortByTypeButton, &QPushButton::clicked, this, [&]() {
@@ -249,12 +253,12 @@ void GUI::connectSignalsSlots() {
 			QMessageBox::warning(this, "Repository Error", QString::fromStdString(re.getErrorMsg()));
 		}
 		});
-	QObject:connect(generateCarsButton, &QPushButton::clicked, this, [&]() {
-		carsSrv.generateWashList(generateCarsText->text().toInt());
-		});
-	QObject::connect(washListReadOnlyButton, &QPushButton::clicked, this, [&]() {
-		WashListReadOnlyGUI* washListReadOnly = new WashListReadOnlyGUI{ carsSrv };
-		});
+QObject:connect(generateCarsButton, &QPushButton::clicked, this, [&]() {
+	carsSrv.generateWashList(generateCarsText->text().toInt());
+	});
+/*QObject::connect(washListReadOnlyButton, &QPushButton::clicked, this, [&]() {
+	WashListReadOnlyGUI* washListReadOnly = new WashListReadOnlyGUI{ carsSrv };
+	});*/
 }
 
 void GUI::refreshCarsList(const vector<Car>& cars) {
@@ -522,11 +526,11 @@ void WashListGUI::connectSignalsSlots() {
 			QMessageBox::warning(washListWindow, "Repository Error", QString::fromStdString(re.getErrorMsg()));
 		}
 		});
-	QObject:connect(generateCarsButton, &QPushButton::clicked, this, [&]() {
-		carsSrv.generateWashList(generateCarsText->text().toInt());
-		refreshCarsList(carsSrv.getWashList());
+QObject:connect(generateCarsButton, &QPushButton::clicked, this, [&]() {
+	carsSrv.generateWashList(generateCarsText->text().toInt());
+	refreshCarsList(carsSrv.getWashList());
 	});
-	QObject::connect(exportWashListButton, &QPushButton::clicked, this, [&]() {
+QObject::connect(exportWashListButton, &QPushButton::clicked, this, [&]() {
 	try {
 		carsSrv.exportWashListToFile(exportWashListText->text().toStdString());
 		exportWashListText->setText("");

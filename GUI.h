@@ -50,8 +50,9 @@ private:
 	QVBoxLayout* manufLayout;
 	vector<QPushButton*> manufButtons;
 	QPushButton* washListButton;
-	QPushButton* washListReadOnlyButton = new QPushButton("Wash List Read Only");
+	// QPushButton* washListReadOnlyButton = new QPushButton("Wash List Read Only");
 
+	QLabel* washListLabel;
 	QPushButton* emptyWashListButton;
 	QPushButton* washListAddButton;
 	QLineEdit* washListRegNumberText;
